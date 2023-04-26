@@ -1,9 +1,9 @@
 lista = []
 file = open("file.in" , "r")
-somatorio = 0
-cont = 0
-for linha in file: 
+for linha in file:
+        somatorio = cont = 0
         linha = linha.strip()
+        print(linha)
         for letra in linha:
             if letra == 'a':
              cont += 1
