@@ -1,0 +1,9 @@
+def buscar_str(arquivo , palavra):
+    file = open(arquivo , "r")
+    cont = 0
+    for linha in file:
+        linha = linha.upper()
+        if palavra.upper in linha:
+            cont += linha.count(palavra.upper())
+            linha.count(palavra)
+            print(f"'{palavra} encontra{cont} vez(es)!'")
